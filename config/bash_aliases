@@ -16,9 +16,9 @@ alias please='sudo'
 
 alias serve='python -m SimpleHTTPServer 8080'
 
-alias sql='mysql -u root -plevi'
+alias sql='mysql -u root -pkbrown'
 
-alias git-ssh-gen='ssh-keygen -t rsa -b 4096 -C "levi@roxsoftware.com"'
+alias git-ssh-gen='ssh-keygen -t rsa -b 4096 -C "s.keith.brown@gmail.com"'
 
 # .dot setup aliases
 alias bashrc='vim ~/.bashrc'

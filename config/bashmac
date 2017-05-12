@@ -8,10 +8,10 @@ export PATH=${PATH}:~/Library/Android/sdk/platform-tools
 export PATH=$PATH:/usr/local/mysql/bin
 
 # java home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home
 
 # alias for virtualbox
 alias vb='VboxManage'
 
 # source BP vars
-source /Users/levi/xtuml/BP.info
+source /Users/kbrown/xtuml/BP.info
