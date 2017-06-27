@@ -1,4 +1,7 @@
 # Aliases
+alias bp='nohup /Users/kbrown/xtuml/BridgePoint/bridgepoint >/dev/null 2>&1'
+alias bpdev='nohup /Users/kbrown/xtuml/bpdev/bridgepoint >/dev/null 2>&1'
+
 alias ll='ls -alF'
 alias la='ls -A'
 alias ls='ls -CFG'
