@@ -27,9 +27,11 @@ mkdir backup
 [ -f ~/.gitignore ] && cp -f ~/.gitignore backup/gitignore >> LOGFILE 2>&1
 [ -f ~/.vimrc ] && cp -f ~/.vimrc backup/vimrc >> LOGFILE 2>&1
 [ -d ~/.vim ] && cp -rf ~/.vim backup/vim >> LOGFILE 2>&1
+[ -f ~/.zsh_aliases ] && cp -f ~/.zsh_aliases backup/zsh_aliases >> LOGFILE 2>&1
+[ -f ~/.zshrc ] && cp -f ~/.zshrc backup/zshrc >> LOGFILE 2>&1
 
 # remove old files
-rm -rf ~/.bash_aliases ~/.bashlinux ~/.bashmac ~/.bashrc ~/.profile ~/.gitconfig ~/.gitignore ~/.vimrc ~/.vim >> LOGFILE 2>&1
+rm -rf ~/.bash_aliases ~/.bashlinux ~/.bashmac ~/.bashrc ~/.profile ~/.gitconfig ~/.gitignore ~/.vimrc ~/.vim ~/.zsh_aliases ~/.zshrc >> LOGFILE 2>&1
 
 # Link files
 echo "-dot: Linking config files..."
@@ -42,6 +44,8 @@ ln -s ~/.dot/config/gitconfig ~/.gitconfig >> LOGFILE 2>&1
 ln -s ~/.dot/config/gitignore ~/.gitignore >> LOGFILE 2>&1
 ln -s ~/.dot/config/vimrc ~/.vimrc >> LOGFILE 2>&1
 ln -s ~/.dot/config/vim ~/.vim >> LOGFILE 2>&1
+ln -s ~/.dot/config/zsh_aliases ~/.zsh_aliases >> LOGFILE 2>&1
+ln -s ~/.dot/config/zshrc ~/.zshrc >> LOGFILE 2>&1
 
 # Pull down submodules
 echo "-dot: Updating submodules..."
