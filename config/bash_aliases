@@ -1,6 +1,6 @@
 # Aliases
-alias bp='nohup /Users/kbrown/xtuml/BridgePoint/bridgepoint >/dev/null 2>&1'
-alias bpdev='nohup /Users/kbrown/xtuml/bpdev/bridgepoint >/dev/null 2>&1'
+alias bp='~/bin/runbp.sh'
+alias bpdev='~/bin/runbp.sh'
 
 alias ll='ls -alF'
 alias la='ls -A'
@@ -17,11 +17,11 @@ alias h='history'
 alias vi='vim'
 alias please='sudo'
 
+alias findbig='du -d 1 -h . 2>/dev/null | sort -rh | head -n 20'
+
 alias serve='python -m SimpleHTTPServer 8080'
 
 alias sql='mysql -u root -pkbrown'
-
-alias git-ssh-gen='ssh-keygen -t rsa -b 4096 -C "s.keith.brown@gmail.com"'
 
 # .dot setup aliases
 alias bashrc='vim ~/.bashrc'

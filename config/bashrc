@@ -50,14 +50,20 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+# Set a default editor
+export EDITOR=vi
+
 # Add user /bin dir to path
-export PATH=$PATH:/usr/local/sbin:~/bin
+export PATH=/usr/local/opt/mysql@5.6/bin:$PATH:/usr/local/sbin:~/bin:~/bin/gcc-arm-none-eabi-5_4-2016q3/bin:~/development/flutter/bin
 
 # Ignore case in tab completion
 set completion-ignore-case on
 
 # Set prompt text
 PS1="\@-\w\$ "
+
+# pandoc markdown to HTML command
+md2html() { pandoc "$1.md" -f markdown_github -t html5 -o "$1.html" -c ~/git/bridgepoint/src/org.xtuml.bp.doc/github-pandoc.css ; }
 
 # Source operating system specific bashrc
 OPNAME=`uname`
